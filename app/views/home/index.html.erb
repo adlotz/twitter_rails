@@ -1,2 +1,18 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+
+<div class="center jumbotron" align="center" >
+
+<h1>Ecris ton tweet! </h1>
+
+<%= form_with do |form| %>
+ 
+  <p>
+    <%= form.label :tweet, "écris ce que tu veux tweeter" %><br>
+    <%= form.text_area :tweet %>
+  </p>
+ 
+  <p>
+    <%= form.submit 'envoyer', class: "btn btn-lg btn-primary" %>
+  </p>
+<% end %>
+</div>
